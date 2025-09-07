@@ -160,6 +160,7 @@ export default function ContactForm() {
               className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 
                          text-white px-6 py-3 rounded-xl font-semibold shadow-md transition md:col-span-2 
                          disabled:opacity-70"
+              suppressHydrationWarning
             >
               {status === "loading" ? "Sending..." : "Send Message"}
             </button>
