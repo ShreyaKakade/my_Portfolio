@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌞 Light theme only (default) */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+
+  --card: #f9f9f9;
+  --muted: #f1f1f1;
+  --accent: #2563eb; /* blue-600 */
+  --border: #e5e7eb; /* gray-200 */
+}
+
+/* Apply vars */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-effect {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* From Uiverse.io by JAE2Dev */
+.card {
+  /* Brighter gradient */
+  --background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%);
+  width: 100%;
+  height: 100%;
+  padding: 0.9px;
+  border-radius: 0.7rem;
+  overflow: visible;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, background 0.5s ease;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: -22px;
+  left: 0px;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.76);
+  filter: blur(60px); /* even brighter glow */
+  background: var(--background);
+  opacity: 0.5; /* initial glow */
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.card-info {
+  --color: #111827; /* Dark terminal look */
+  background: var(--color);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  border-radius: 0.7rem;
+  transition: background 0.5s, color 0.5s;
+}
+
+.card .title {
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: #fff;
+}
+
+/* Hover Effect */
+.card:hover::after {
+  opacity: 0.9; /* stronger glow on hover */
+  transform: scale(0.9); /* bigger glow */
+  top: 0px;
+  transition: 0.6s;
+}
+
+.card:hover .card-info {
+  color: #fff9f9;
+  background: #111827; /* keeps dark terminal look */
+  transition: color 0.6s, background 0.6s;
+}
+
+.card:hover {
+  transform: translateY(-6px); /* subtle lift effect */
+}
