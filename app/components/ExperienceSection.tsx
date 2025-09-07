@@ -1,19 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
 
 export default function Experience() {
   const typingText = "$worked_what_i_learned";
-  const [showCursor, setShowCursor] = useState(true);
-
-  // Blinking cursor effect
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor((prev) => !prev);
-    }, 500);
-    return () => clearInterval(cursorInterval);
-  }, []);
 
   return (
     <section id="experience" className="py-16 px-6 bg-white">
@@ -31,13 +21,13 @@ export default function Experience() {
 
           {/* Typing animation */}
           <motion.p
-                      className="text-green-400 font-mono mt-2 text-lg md:text-xl inline-block overflow-hidden whitespace-nowrap border-r-2 border-green-400"
-                      initial={{ width: 0 }}
-                      animate={{ width: "23ch" }}
-                      transition={{ duration: 2, ease: "easeInOut" }}
-                    >
-                      {typingText}
-                    </motion.p>
+            className="text-green-400 font-mono mt-2 text-lg md:text-xl inline-block overflow-hidden whitespace-nowrap border-r-2 border-green-400"
+            initial={{ width: 0 }}
+            animate={{ width: "23ch" }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+          >
+            {typingText}
+          </motion.p>
         </div>
 
         {/* Experience Cards */}
@@ -79,7 +69,7 @@ export default function Experience() {
                 boxShadow: "rgba(0, 0, 0, 0.35) 0px 10px 30px",
               }}
             >
-              {/* Only 3 terminal dots */}
+              {/* Terminal-style header with 3 dots */}
               <div className="flex items-center gap-2 px-5 py-3">
                 <div className="w-3 h-3 rounded-full bg-red-500" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500" />
