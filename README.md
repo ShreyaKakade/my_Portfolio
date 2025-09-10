@@ -11,23 +11,23 @@ This is my personal portfolio website, built from scratch to showcase my journey
   
 **Tech Stack**
 1 Frontend & Framework
-Next.js (React Framework) 
-TypeScript
-React.js
-Tailwind CSS 
+- Next.js (React Framework) 
+- TypeScript
+- React.js
+- Tailwind CSS 
 
 2 Animations & UI Enhancements
-Framer Motion
-Shadcn/UI 
-React Icons 
+- Framer Motion
+- Shadcn/UI 
+- React Icons 
 
 3 Deployment & Hosting
-Vercel 
+- Vercel 
 
 4 Tools & Workflow
-Git & GitHub
-Node.js & npm 
-VS Code 
+- Git & GitHub
+- Node.js & npm 
+- VS Code 
 
 **Getting Started**
 To run this project locally:
@@ -46,8 +46,8 @@ npm run dev
 **Future Enhancements**
 Planned improvements for upcoming versions:
 
-Dark Mode Toggle for better accessibility
-Project Filtering & Categories to navigate projects easily
-Blog Section to share insights, tutorials, and experiences
-Multilingual Support for wider audience reach
-Improved Responsiveness for seamless mobile experience
+* Dark Mode Toggle for better accessibility
+* Project Filtering & Categories to navigate projects easily
+* Blog Section to share insights, tutorials, and experiences
+* Multilingual Support for wider audience reach
+* Improved Responsiveness for seamless mobile experience
