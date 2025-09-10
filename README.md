@@ -10,6 +10,7 @@ This is my personal portfolio website, built from scratch to showcase my journey
 * Contact Section – Easy way to connect with me
   
 **Tech Stack**
+
 1 Frontend & Framework
 - Next.js (React Framework) 
 - TypeScript
@@ -30,6 +31,7 @@ This is my personal portfolio website, built from scratch to showcase my journey
 - VS Code 
 
 **Getting Started**
+
 To run this project locally:
 # Clone the repository
 git clone https://github.com/ShreyaKakade/my_Portfolio.git
@@ -44,6 +46,7 @@ npm install
 npm run dev
 
 **Future Enhancements**
+
 Planned improvements for upcoming versions:
 
 * Dark Mode Toggle for better accessibility
